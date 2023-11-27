@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(98, 10, 72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://images.hdqwalls.com/wallpapers/abstract-simple-background-4k-lp.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.sign {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+    border: 1px solid#000000;
+    border-radius: 149px;
+    backdrop-filter: blur(0px);
+    box-shadow: 7px 6px 9px 0 rgb(225, 183, 73);
+}
+
+
+
+
+.input-animation {
+    transition: all 0.7s ease-in-out;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100;
+    outline: none;
+    border-radius: 10px;
+    background-color: #8b00ff00;
+}
+
+
+.input-animation:focus {
+    border-color: #010101;
+    box-shadow: 0 0 10px rgba(9, 10, 10, 0.7);
+}
+
+.login-button {
+    background-color: #621794;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #0c0b0b;
+    border-radius: 50px;
+    background-color: #fa080000;
+    transition: background-color 0.3s ease, transform 0.3s ease
+}
+
+
+.login-button:hover {
+    background-color: #e2b849;
+    ;
+    border-color: #010101;
+    box-shadow: 0 0 10px rgba(9, 10, 10, 0.7);
+    transform: scale(1.1)
+}
+
+.login-button:active {
+    background-color: #621794;
+}
+
+.signup-button {
+    background-color: #621794;
+    color: rgb(3, 3, 3);
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    background-color: rgba(138, 11, 242, 0);
+    transition: background-color 0.3s ease, transform 0.3s ease
+}
+
+.signup-button:hover {
+    background-color: #e2b849;
+    border-color: #010101;
+    box-shadow: 0 0 10px rgba(9, 10, 10, 0.7);
+    transform: scale(1.1)
+}
+
+
+
+.signup-button:active {
+    background-color: #621794;
+}
+
+.logo {
+    height: 88px;
+    width: 196px;
+    margin-right: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(98, 10, 72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://images.hdqwalls.com/wallpapers/abstract-simple-background-4k-lp.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sign {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+    border: 0px solid #000000;
+    border-radius: 50%;
+    backdrop-filter: blur(0px);
+    box-shadow: 7px 6px 9px 0 rgb(225, 183, 73);
+    max-width: 600px;
+    width: 100%;
+    animation: squareOpen 1.5s ease-in-out, spin 2s linear;
+}
+
+@keyframes squareOpen {
+    from {
+        width: 0;
+        height: 0;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+}
+
+.input-animation {
+    transition: all 0.7s ease-in-out;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    outline: none;
+    background-color: #8b00ff00;
+}
