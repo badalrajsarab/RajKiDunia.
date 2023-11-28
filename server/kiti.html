@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RajKiDunia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./css/style2.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="https://www.logolynx.com/images/logolynx/ca/caec3ebc94200aabb4a2c31891100f28.png" alt="Logo Dome"
+        class="logo">
+    </div>
+    <div class="name">
+      <h1>SkillCraft Academy</h1>
+    </div>
+    <div class="location-details">
+      <i class="fas fa-map-marker-alt location-icon"></i>
+      <p>Location: Bhubaneswar</p>
+      <p>Contact: 123-456-7890</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('video')">Videos</a>
+    <a href="#" onclick="showSection('featuredContent')">Featured Content</a>
+    <a href="#" onclick="showSection('joinUs')">Join Us</a>
+    <a href="#" onclick="showSection('gallery')">Gallery</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <img id="dynamicPhoto" class="visible" src="https://www.teachingtimes.com/wp-content/uploads/2019/07/Coding-1.jpg"
+        alt="Dynamic Photo">
+    </section>
+
+    <section id="content"></section>
+  </main>
+
+  <div id="video" style="display: none;">
+    <section>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/DaAJIMakWKU?si=W8oRa4eVBJ_q5GQB"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=0KKt2B6EQnNMmVeC"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/ntLJmHOJ0ME?si=vk8yqEOdF2RKbiPy"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/J6mDkcqU_ZE?si=tL2yLjzAZV0IFw6p"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=iCsJTL0mXSH47FZ-"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/s_8b5iq4Rvk?si=H5NVje6OQr4bN-2X"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/hlGoQC332VM?si=nlrxhMTm9JSY6R1i"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/eTXd89t8ngI?si=L7lbmjrA2XpQpe8C"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+
+  </div>
+
+  <div id="featuredContent" style="display: none;">
+    <section id="featured-content">
+      <div class="container">
+        <div class="feature-description">
+          <h2>Unlock Your Potential with SkillCraft Academy</h2>
+          <p>At SkillCraft Academy, we believe in empowering individuals through education. Our courses cover a wide
+            range of topics, from technical skills to creative arts.</p>
+          <p>With experienced instructors and hands-on projects, you'll gain practical knowledge that you can apply in
+            the real world.</p>
+          <button id="enroll-btn" onclick="enrollNow()">Enroll Now</button>
+        </div>
+        <div class="feature-image">
+          <!-- Replace 'your-feature-image.jpg' with the actual URL of your feature image -->
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/000/523/309/original/web-development-and-programming-coding-concept-seo-optimization-modern-web-design-on-laptop-screen-vector.jpg"
+            alt="SkillCraft Academy Feature">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="joinUs" style="display: none;">
+    <h2>Welcome to SkillCraft Academy! To join us and unlock premium content, please make a payment using the following
+      methods:</h2>
+    <h3>Payment Methods:</h3>
+    <ul>
+      <li>Credit Card</li>
+      <li>Debit Card</li>
+      <li>UPI (Unified Payments Interface)</li>
+    </ul>
+
+    <h3>UPI Details:</h3>
+    <p>Make the payment to our UPI ID: skillcraftacademy@upi</p>
+
+    <div id="joinUsForm">
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" placeholder="Enter your card number">
+
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="text" id="expiryDate" placeholder="MM/YY">
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" placeholder="Enter CVV">
+
+      <button onclick="makePayment()">Make Payment</button>
+    </div>
+  </div>
+
+  <div id="gallery" style="display: none;">
+    <div class="gallery-container">
+      <img
+        src="http://3.bp.blogspot.com/-Pr_DMHcaqvA/U-6P5s_WuyI/AAAAAAAAIIU/n5LHE6K-KpQ/s1600/IMG_20140807_174250979_HDR.jpg"
+        alt="pic1" width="250px" height="150px">
+      <img src="https://cednc.org/wp-content/uploads/2019/08/blur-codes-coding-577585-1200x600.jpg" alt="pic4"
+        width="250px" height="150px">
+      <img
+        src="https://2.bp.blogspot.com/-ghmcNr_tLUg/WJpxdFq5IbI/AAAAAAAAKJ0/0NvvshRHjbQ9crhtY5FKSZ_fPnQNBtfjQCLcB/s1600/image001.jpg"
+        alt="pic6" width="250px" height="150px">
+      <img src="https://love.lambeth.gov.uk/wp-content/uploads/2014/09/720x368_code_club.png" alt="pic7" width="250px"
+        height="150px">
+    </div>
+
+    <img src="https://scoil-bhride.com/wp-content/uploads/2013/12/Mr.-M-computer-room-1.jpg" alt="pic2" width="250px"
+      height="150px">
+    <img
+      src="https://blog.learningpeople.com/hubfs/Blog%20content%20images/Blog%20images%20%3E%20March/storytagger-blogs-header_code_optimised.jpg#keepProtocol"
+      alt="pic3" width="250px" height="150px">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.wHbuDM4WQPltbw6TLpr6PwHaFj&pid=Api&P=0&h=220" alt="pic5" width="250px"
+      height="150px">
+  </div>
+
+
+
+  <script>
+    const photoList = [
+      'https://www.eginnovations.com/blog/wp-content/uploads/2019/06/how-to-troubleshoot-java-cpu.jpg',
+      'https://wallpapercave.com/wp/wp3105538.jpg',
+      'https://wallpapercave.com/wp/wp4895272.jpg',
+      'https://wallpapercave.com/wp/wp5070716.jpg',
+      'https://wallpapercave.com/wp/wp2742531.png'
+    ];
+
+    let currentIndex = 0;
+    const photoElement = document.getElementById('dynamicPhoto');
+
+    function changePhoto() {
+      const currentPhoto = photoList[currentIndex];
+      photoElement.src = currentPhoto;
+
+      currentIndex = (currentIndex + 1) % photoList.length;
+    }
+
+    setInterval(changePhoto, 3000);
+
+    function showSection(sectionId) {
+      document.getElementById('home').style.display = 'none';
+      document.getElementById('video').style.display = 'none';
+      document.getElementById('featuredContent').style.display = 'none';
+      document.getElementById('joinUs').style.display = 'none';
+      document.getElementById('gallery').style.display = 'none';
+
+      document.getElementById(sectionId).style.display = 'block';
+    }
+
+    function makePayment() {
+      alert("Payment processed successfully!");
+    }
+    function enrollNow() {
+      // Redirect to the "Join Us" section
+      showSection('joinUs');
+    }
+  
+
+
+  </script>
+</body>
+
+</html>
