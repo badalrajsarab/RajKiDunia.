@@ -44,7 +44,7 @@
             const user = users.find(u => u.username === username && u.password === password);
 
             if (user) {
-                window.location.href = "./Server/kiti.html"; 
+                window.location.href = "/Server/kiti.html";
             } else {
                 alert("Login failed. Please sign up.");
             }
@@ -70,7 +70,7 @@
 
             if (username && password && phone) {
                 signUpUser(username, password, phone);
-                window.location.href = "./Server/kiti.html"; 
+                window.location.href = "/Server/kiti.html";
 
             }
         });
